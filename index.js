@@ -6,6 +6,9 @@ require('dotenv').config();
 
 /* -===================== Middlewares =====================- */
 const bodyParser = require('body-parser');
+
+const helmet = require('helmet');
+
 const {
   joiError,
   domainError,
@@ -19,6 +22,8 @@ const { sales } = require('./controllers/salesController');
 const app = express();
 
 app.use(bodyParser.json());
+
+app.use(helmet.hidePoweredBy()); // fix security issue
 
 app.get('/', (_req, res) => {
   res.send();
