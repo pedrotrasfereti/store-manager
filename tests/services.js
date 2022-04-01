@@ -3,12 +3,12 @@ const { expect } = require('chai');
 const sinon = require('sinon');
 
 /* -======================= Model =======================- */
-const productsModel = require('../../models/productsModel');
-const salesModel = require('../../models/salesModel');
+const productsModel = require('../models/productsModel');
+const salesModel = require('../models/salesModel');
 
 /* -======================= Service =======================- */
-const productsService = require('../../services/productsService');
-const salesService = require('../../services/salesService');
+const productsService = require('../services/productsService');
+const salesService = require('../services/salesService');
 
 describe('productsService', () => {
   describe('"getAll" gets all products from the products table', () => {

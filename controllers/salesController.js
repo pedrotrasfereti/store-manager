@@ -11,7 +11,7 @@ const {
 } = require('../utils/statusCodes');
 
 /* -======================= Schemas =======================- */
-const validateSale = require('../schemas/saleSchema');
+const validateSale = require('../utils/joi_schemas/saleSchema');
 
 /* -======================= Services =======================- */
 const salesService = require('../services/salesService');

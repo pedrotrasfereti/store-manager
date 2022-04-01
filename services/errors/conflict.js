@@ -1,5 +1,5 @@
 /* -======================= Utils =======================- */
-const { HTTP_CONFLICT } = require('../utils/statusCodes');
+const { HTTP_CONFLICT } = require('../../utils/statusCodes');
 
 class ConflictError {
   constructor(message) {

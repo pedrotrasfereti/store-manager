@@ -2,7 +2,7 @@
 const joi = require('joi');
 
 /* -======================= Messages =======================- */
-const { request } = require('../utils/messages');
+const { request } = require('../messages');
 
 const idKey = 'product_id'; // keep snake_case
 

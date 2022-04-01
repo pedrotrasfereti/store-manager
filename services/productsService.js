@@ -2,8 +2,8 @@
 const productsModel = require('../models/productsModel');
 
 /* -======================= Errors =======================- */
-const ConflictError = require('../errors/conflict');
-const NotFoundError = require('../errors/notFound');
+const ConflictError = require('./errors/conflict');
+const NotFoundError = require('./errors/notFound');
 
 /* -======================= Messages =======================- */
 const messages = require('../utils/messages');

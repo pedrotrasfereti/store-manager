@@ -3,9 +3,9 @@ const { expect } = require('chai');
 const sinon = require('sinon');
 
 /* -======================= Model =======================- */
-const connection = require('../../models/connection');
-const productsModel = require('../../models/productsModel');
-const salesModel = require('../../models/salesModel');
+const connection = require('../models/connection');
+const productsModel = require('../models/productsModel');
+const salesModel = require('../models/salesModel');
 
 describe('productsModel', () => {
   describe('"getAll" gets all products from the products table', () => {

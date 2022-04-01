@@ -5,6 +5,7 @@ const product = {
 
 const sale = {
   notFound: 'Sale not found',
+  amountNotPermitted: 'Such amount is not permitted to sell',
 };
 
 const request = {

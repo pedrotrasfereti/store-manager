@@ -1,9 +1,11 @@
 /* -======================= Utils =======================- */
-const { HTTP_UNPROCESSABLE_ENTITY } = require('../utils/statusCodes');
+const { HTTP_UNPROCESSABLE_ENTITY } = require('../../utils/statusCodes');
+
+const messages = require('../../utils/messages');
 
 class AmountError {
   constructor() {
-    this.message = 'Such amount is not permitted to sell';
+    this.message = messages.sale.amountNotPermitted;
     this.code = HTTP_UNPROCESSABLE_ENTITY;
   }
 }

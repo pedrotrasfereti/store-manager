@@ -3,8 +3,8 @@ const salesModel = require('../models/salesModel');
 const productsModel = require('../models/productsModel');
 
 /* -======================= Errors =======================- */
-const NotFoundError = require('../errors/notFound');
-const AmountError = require('../errors/amount');
+const NotFoundError = require('./errors/notFound');
+const AmountError = require('./errors/amount');
 
 /* -======================= Messages =======================- */
 const messages = require('../utils/messages');

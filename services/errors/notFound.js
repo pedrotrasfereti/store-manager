@@ -1,5 +1,5 @@
 /* -======================= Utils =======================- */
-const { HTTP_NOT_FOUND } = require('../utils/statusCodes');
+const { HTTP_NOT_FOUND } = require('../../utils/statusCodes');
 
 class NotFoundError {
   constructor(message) {

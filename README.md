@@ -19,7 +19,7 @@ Here you can find information about the project's development, such as which tec
 
 This back-end application was developed during my time at [Trybe](https://www.betrybe.com/) to practice the lessons learned on Express.js and REST architecture. The API is a sales management system, where you can create, view, delete and update products and sales.
 
-I relied on the Test Driven Development (**TDD**) process to develop the modules and used a _multi-layered architecture_ — which in this case, are the _model_, _service_ and _controller_ layers. The tests suites can be found in the `test/unit` directory.
+I relied on the Test Driven Development (**TDD**) process to develop the modules and used a _multi-layered architecture_ — which in this case, are the _model_, _service_ and _controller_ layers. The tests suites can be found in the `tests` directory.
 
 
 During the development I was able to:
