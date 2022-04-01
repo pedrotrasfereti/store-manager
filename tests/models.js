@@ -144,7 +144,7 @@ describe('productsModel', () => {
             {
               id: 1,
               name: 'Milk',
-              quantity: 10,
+              quantity: 20,
             },
           ];
 
@@ -297,12 +297,12 @@ describe('salesModel', () => {
             {
               id: 1,
               name: 'Milk',
-              quantity: 10,
+              quantity: 13,
             },
             {
               id: 2,
               name: 'Strawberry Pie',
-              quantity: 5,
+              quantity: 8,
             },
           ];
 

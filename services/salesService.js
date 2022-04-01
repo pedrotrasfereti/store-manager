@@ -9,17 +9,9 @@ const AmountError = require('./errors/amount');
 /* -======================= Messages =======================- */
 const messages = require('../utils/messages');
 
-const getAll = async () => {
-  const sales = await salesModel.getAll();
-  return sales;
-};
+const getAll = async () => salesModel.getAll();
 
-const getById = async (saleId) => {
-  const sale = await salesModel.getById(saleId);
-  if (sale.length <= 0) throw new NotFoundError(messages.sale.notFound);
-
-  return sale;
-};
+const getById = async (saleId) => salesModel.getById(saleId);
 
 const validateSale = async (item) => {
   const idKey = 'product_id'; // keep snake_case

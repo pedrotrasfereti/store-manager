@@ -16,12 +16,11 @@ const getAll = async () => {
     ON (${salesTable}.id = ${joinedTable}.sale_id)`,
   );
 
-  const salesPretty = sales.map(({ sale_id: saleId, ...rest }) => ({
+  // replace snake_case attribute name by camelCase
+  return sales.map(({ sale_id: saleId, ...rest }) => ({
     saleId,
     ...rest,
   }));
-
-  return salesPretty;
 };
 
 const getById = async (saleId) => {

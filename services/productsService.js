@@ -8,10 +8,7 @@ const NotFoundError = require('./errors/notFound');
 /* -======================= Messages =======================- */
 const messages = require('../utils/messages');
 
-const getAll = async () => {
-  const products = await productsModel.getAll();
-  return products;
-};
+const getAll = async () => productsModel.getAll();
 
 const getById = async (id) => {
   const product = await productsModel.getById(id);
@@ -24,30 +21,18 @@ const create = async (name, quantity) => {
   const exists = await productsModel.getByName(name);
   if (exists) throw new ConflictError(messages.product.duplicated);
 
-  const newProduct = await productsModel.create(name, quantity);
-  return newProduct;
+  return await productsModel.create(name, quantity);
 };
 
 const update = async (id, name, quantity) => {
   const product = await productsModel.getById(id);
   if (!product) throw new NotFoundError(messages.product.notFound);
 
-  const updatedProduct = await productsModel.update(
+  return await productsModel.update(
     id,
     name,
     quantity,
   );
-
-  return updatedProduct;
-};
-
-const remove = async (id) => {
-  const product = await productsModel.getById(id);
-  if (!product) throw new NotFoundError(messages.product.notFound);
-
-  await productsModel.remove(id);
-
-  return product;
 };
 
 module.exports = {
