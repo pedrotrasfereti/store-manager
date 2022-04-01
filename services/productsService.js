@@ -21,14 +21,14 @@ const create = async (name, quantity) => {
   const exists = await productsModel.getByName(name);
   if (exists) throw new ConflictError(messages.product.duplicated);
 
-  return await productsModel.create(name, quantity);
+  return productsModel.create(name, quantity);
 };
 
 const update = async (id, name, quantity) => {
   const product = await productsModel.getById(id);
   if (!product) throw new NotFoundError(messages.product.notFound);
 
-  return await productsModel.update(
+  return productsModel.update(
     id,
     name,
     quantity,
