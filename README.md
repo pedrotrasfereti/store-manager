@@ -29,7 +29,7 @@ During the development I was able to:
 * Connect my application to different **databases**;
 * Improve the **maintainability** and **reusability** of my code;
 * Understand and apply the **REST** constraints;
-* Write **test cases** for my modules using Chai, Mocha and Sinon;
+* Write **test cases** for my modules using [Chai][chaijs-url], [Mocha][mochajs-url] and [Sinon][sinonjs-url];
 * Write intuitive API signatures;
 
 <br>
@@ -112,6 +112,9 @@ List of major frameworks/libraries used to bootstrap this project:
 * [Node.js](https://nodejs.org/en/)
 * [MySQL](https://www.mysql.com/) - database
 * [Joi](https://joi.dev/) - error handling
+* [Chai][chaijs-url] - BDD/TDD assertion library
+* [Mocha][mochajs-url] - test framework
+* [Sinon][sinonjs-url] - test spies, stubs and mocks
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -186,3 +189,6 @@ List of resources I find helpful and would like to give credit to:
 [issues-url]: https://github.com/pedrotrasfereti/store-manager/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/pedro-trasfereti/
+[chaijs-url]: https://www.chaijs.com/
+[mochajs-url]: https://mochajs.org/
+[sinonjs-url]: https://sinonjs.org/
